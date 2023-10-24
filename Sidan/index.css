@@ -1,0 +1,74 @@
+body {
+    background-image: url(images/jimi_hendrix_main.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+}
+
+@font-face {
+    font-family: "BungeeShade";
+    src: url(fonts/Bungee_Shade/BungeeShade-Regular.ttf);
+}
+
+@font-face {
+    font-family: "BarlowCLight";
+    src: url(fonts/Barlow_Condensed/BarlowCondensed-Light.ttf);
+}
+
+@font-face {
+    font-family: "BarlowCBold";
+    src: url(fonts/Barlow_Condensed/BarlowCondensed-Bold.ttf);
+}
+
+main {
+    background-color: rgb(0, 0, 0, 0.6);
+    margin-left: 90px;
+    margin-right: 90px;
+    margin-top: 60px;
+}
+
+main > h1 {
+    font-family: "BungeeShade";
+    color: rgb(173, 170, 170);
+    font-size: 70px;
+    margin-left: 15px;
+    margin-top: 0;
+    padding-top: 10px;
+    line-height: 1;
+}
+
+nav {
+    display: flex;
+    gap: 5px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+nav > div{
+    background-color: rgba(205, 205, 205, 0.6);
+    flex-basis: 0;
+    flex-grow: 1;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    font-family: "BarlowCLight";
+    font-size: 25px;
+    padding: 5px;
+}
+
+nav > div:nth-of-type(1){
+    margin-left: 15px;
+}
+
+nav > div:nth-of-type(2){
+    font-family: "BarlowCBold";
+    box-shadow: 0px 0px 10px white;
+    border: 1px solid white;
+}
+
+nav > div:nth-of-type(4){
+    margin-right: 15px;
+}
