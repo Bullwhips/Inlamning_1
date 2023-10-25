@@ -21,18 +21,24 @@ body {
     src: url(fonts/Barlow_Condensed/BarlowCondensed-Bold.ttf);
 }
 
+@font-face {
+    font-family: "BungeeOutline";
+    src: url(fonts/Bungee_Outline/BungeeOutline-Regular.ttf);
+}
+
 main {
-    background-color: rgb(0, 0, 0, 0.6);
+    background-color: rgb(0, 0, 0, 0.4);
     margin-left: 90px;
     margin-right: 90px;
     margin-top: 60px;
+    border-radius: 20px;
 }
 
-main > h1 {
+main>h1 {
     font-family: "BungeeShade";
     color: rgb(173, 170, 170);
     font-size: 70px;
-    margin-left: 15px;
+    margin-left: 20px;
     margin-top: 0;
     padding-top: 10px;
     line-height: 1;
@@ -45,8 +51,8 @@ nav {
     margin-bottom: 80px;
 }
 
-nav > div{
-    background-color: rgba(205, 205, 205, 0.6);
+nav>div {
+    background-color: rgba(214, 214, 214, 0.6);
     flex-basis: 0;
     flex-grow: 1;
     height: 50px;
@@ -59,16 +65,87 @@ nav > div{
     padding: 5px;
 }
 
-nav > div:nth-of-type(1){
-    margin-left: 15px;
+nav>div:nth-of-type(1) {
+    margin-left: 20px;
 }
 
-nav > div:nth-of-type(2){
+nav>div:nth-of-type(2) {
     font-family: "BarlowCBold";
     box-shadow: 0px 0px 10px white;
     border: 1px solid white;
 }
 
-nav > div:nth-of-type(4){
-    margin-right: 15px;
+nav>div:nth-of-type(4) {
+    margin-right: 20px;
+}
+
+main>div {
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+    border-top: 2px solid gray;
+    border-bottom: 2px solid gray;
+    background-color: rgb(0, 0, 0, 0.3);
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 20px;
+}
+
+main>div {
+    color: rgb(217, 217, 217);
+}
+
+div>section h1 {
+    font-family: "BungeeOutline";
+}
+
+div>section>h2 {
+    font-family: "BarlowCBold";
+    color: rgb(185, 185, 185)
+}
+
+div p {
+    font-family: "BarlowCLight";
+}
+
+.album1Songs>div:nth-of-type(2),
+.album1Songs>div:nth-of-type(3) {
+    background-color: rgb(255, 208, 0);
+    color: rgb(189, 98, 113);
+}
+
+li {
+    font-family: "BarlowCLight";
+}
+
+.album1Songs>div:nth-of-type(2),
+.album1Songs>div:nth-of-type(3) h2 {
+    font-family: "BarlowCLight";
+}
+
+.album1Info div {
+    background-color: rgb(189, 98, 113);
+    color: rgb(255, 208, 0);
+    font-family: "BarlowCLight";
+}
+
+.album2Songs>div:nth-of-type(2),
+.album2Songs>div:nth-of-type(3) {
+    background-color: beige;
+    color: blue
+}
+
+.album2Songs>div:nth-of-type(2),
+.album2Songs>div:nth-of-type(3) h2 {
+    font-family: "BarlowCLight";
+}
+
+.album2Info div {
+    background-color: blue;
+    color: beige;
+    font-family: "BarlowCLight";
+}
+
+main>p{
+    font-family: "BarlowCLight";
+    color: rgb(217, 217, 217);
 }
