@@ -88,6 +88,7 @@ main>div {
     margin-left: 20px;
     margin-right: 20px;
     border-radius: 20px;
+
 }
 
 main>div {
@@ -107,8 +108,8 @@ div p {
     font-family: "BarlowCLight";
 }
 
-.album1Songs>div:nth-of-type(2),
-.album1Songs>div:nth-of-type(3) {
+.album1Songs>section>div:nth-of-type(1),
+.album1Songs>section>div:nth-of-type(2) {
     background-color: rgb(255, 208, 0);
     color: rgb(189, 98, 113);
 }
@@ -145,7 +146,54 @@ li {
     font-family: "BarlowCLight";
 }
 
-main>p{
+main>p {
     font-family: "BarlowCLight";
     color: rgb(217, 217, 217);
+}
+
+main>div>div {
+    display: flex;
+}
+
+
+.album1Info {
+    display: flex;
+}
+
+.album1Songs>section {
+    display: flex;
+}
+
+.album1Songs{
+    width: 35% ;
+}
+
+div>div>div{
+    width: 65%;
+}
+
+
+.album1Songs>div:nth-of-type(1){
+    margin-top: 10px;
+    margin-right: 10px;
+}
+.album1Songs>div:nth-of-type(1) img{
+    width: 100%;
+    
+}
+
+section>section{
+    gap: 10px;
+    margin-right: 10px;
+    margin-top: 5px;
+}
+
+section>section>div:nth-of-type(1){
+    border-radius: 0 0 0 20px;
+    width: 50%;
+}
+
+section>section>div:nth-of-type(2){
+    border-radius: 0 0 20px 0;
+    width: 50%;
 }
