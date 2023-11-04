@@ -1,3 +1,5 @@
+/* General */
+
 body {
     background-image: url(images/jimi_hendrix_main.jpg);
     background-attachment: fixed;
@@ -26,23 +28,36 @@ body {
     src: url(fonts/Bungee_Outline/BungeeOutline-Regular.ttf);
 }
 
+
+
+/* Main */
+
 main {
     background-color: rgb(0, 0, 0, 0.4);
-    margin-left: 90px;
-    margin-right: 90px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 100px;
     margin-top: 60px;
     border-radius: 20px;
+    width: 80vw;
+    padding: 20px;
 }
+
+
+
+/* Main Title */
 
 main>h1 {
     font-family: "BungeeShade";
-    color: rgb(173, 170, 170);
-    font-size: 70px;
-    margin-left: 20px;
+    color: rgb(197, 194, 194);
+    font-size: 6vw;
     margin-top: 0;
-    padding-top: 10px;
     line-height: 1;
 }
+
+
+
+/* Nav */
 
 nav {
     display: flex;
@@ -55,19 +70,16 @@ nav>div {
     background-color: rgba(214, 214, 214, 0.6);
     flex-basis: 0;
     flex-grow: 1;
-    height: 50px;
+    height: 4vw;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 10px;
     font-family: "BarlowCLight";
-    font-size: 25px;
+    font-size: 2vw;
     padding: 5px;
 }
 
-nav>div:nth-of-type(1) {
-    margin-left: 20px;
-}
 
 nav>div:nth-of-type(2) {
     font-family: "BarlowCBold";
@@ -75,9 +87,32 @@ nav>div:nth-of-type(2) {
     border: 1px solid white;
 }
 
-nav>div:nth-of-type(4) {
-    margin-right: 20px;
+
+
+
+nav>div:nth-of-type(1):hover {
+    background-color:rgba(28, 27, 27, 0.6);
+    color: white;
+    cursor: pointer;
 }
+
+nav>div:nth-of-type(3):hover {
+    background-color:rgba(28, 27, 27, 0.6);
+    color: white;
+    cursor: pointer;
+
+}
+
+nav>div:nth-of-type(4):hover {
+    background-color:rgba(28, 27, 27, 0.6);
+    color: white;
+    cursor: pointer;
+
+}
+
+
+
+/* Content Section General */
 
 main>div {
     border-left: 1px solid white;
@@ -85,115 +120,309 @@ main>div {
     border-top: 2px solid gray;
     border-bottom: 2px solid gray;
     background-color: rgb(0, 0, 0, 0.3);
-    margin-left: 20px;
-    margin-right: 20px;
     border-radius: 20px;
-
-}
-
-main>div {
     color: rgb(217, 217, 217);
-}
+    overflow: hidden;
+    width: 100%;
 
-div>section h1 {
-    font-family: "BungeeOutline";
-}
 
-div>section>h2 {
-    font-family: "BarlowCBold";
-    color: rgb(185, 185, 185)
-}
 
-div p {
-    font-family: "BarlowCLight";
-}
-
-.album1Songs>section>div:nth-of-type(1),
-.album1Songs>section>div:nth-of-type(2) {
-    background-color: rgb(255, 208, 0);
-    color: rgb(189, 98, 113);
-}
-
-li {
-    font-family: "BarlowCLight";
-}
-
-.album1Songs>div:nth-of-type(2),
-.album1Songs>div:nth-of-type(3) h2 {
-    font-family: "BarlowCLight";
-}
-
-.album1Info div {
-    background-color: rgb(189, 98, 113);
-    color: rgb(255, 208, 0);
-    font-family: "BarlowCLight";
-}
-
-.album2Songs>div:nth-of-type(2),
-.album2Songs>div:nth-of-type(3) {
-    background-color: beige;
-    color: blue
-}
-
-.album2Songs>div:nth-of-type(2),
-.album2Songs>div:nth-of-type(3) h2 {
-    font-family: "BarlowCLight";
-}
-
-.album2Info div {
-    background-color: blue;
-    color: beige;
-    font-family: "BarlowCLight";
-}
-
-main>p {
-    font-family: "BarlowCLight";
-    color: rgb(217, 217, 217);
 }
 
 main>div>div {
     display: flex;
 }
 
+.albumSongs {
+    width: 40%;
+}
 
-.album1Info {
+div>div>div {
+    width: 60%;
+
+}
+
+
+
+
+/* Content Section Text */
+
+div>section h1 {
+    font-family: "BungeeOutline";
+    color: rgb(255, 255, 255);
+    font-size: 3vw;
+    line-height: 0;
+    padding-top: 15px;
+
+}
+
+div>section>h2 {
+    font-family: "BarlowCBold";
+    color: rgb(185, 185, 185);
+    line-height: 0;
+    padding-top: 4px;
+    padding-bottom: 60px;
+    font-size: 2vw;
+
+}
+
+div p {
+    font-family: "BarlowCLight";
+    font-size: 1.4vw;
+
+}
+
+div>div>div {
+    margin-left: 15px;
+}
+
+div>section:nth-of-type(2) p {
+    line-height: 0;
+}
+
+div>section:nth-of-type(2)>p:nth-of-type(2) {
+    padding-left: 35px;
+}
+
+div>section:nth-of-type(2)>p:nth-of-type(3) {
+    padding-left: 35px;
+}
+
+div>section:nth-of-type(2)>p:nth-of-type(4) {
+    padding-left: 35px;
+    padding-bottom: 60px;
+}
+
+article {
+    margin-right: 5px;
+
+}
+
+
+/* Content Section Album */
+
+.albumSongs>section {
     display: flex;
 }
 
-.album1Songs>section {
-    display: flex;
+.albumSongs>section>div {
+    background-color: rgb(255, 208, 0);
+    color: rgb(189, 98, 113);
 }
 
-.album1Songs{
-    width: 35% ;
+#songs2>div {
+    background-color: rgb(59, 118, 185);
+    color: rgb(252, 213, 192);
 }
 
-div>div>div{
-    width: 65%;
+li {
+    font-family: "BarlowCLight";
+    font-size: 1.2vw;
 }
 
-
-.album1Songs>div:nth-of-type(1){
-    margin-top: 10px;
-    margin-right: 10px;
-}
-.album1Songs>div:nth-of-type(1) img{
-    width: 100%;
+.albumSongs>div {
+    margin-top: 15px;
+    margin-right: 15px;
+    position: relative;
     
 }
 
-section>section{
+.albumSongs>div img:nth-of-type(1) {
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+    transition: 1s ;
+    height: 100%;
+}
+
+.albumSongs>div img:nth-of-type(2) {
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    opacity: 0;
+    height: 99%;
+    transition: 1s ;
+}
+
+.albumSongs>div:hover>img:nth-of-type(1) {
+   opacity: 0;
+} 
+
+.albumSongs>div:hover>img:nth-of-type(2) {
+    opacity: 1;;
+ } 
+     
+    
+
+
+section>section {
     gap: 10px;
-    margin-right: 10px;
+    margin-right: 15px;
     margin-top: 5px;
+    margin-bottom: 10px;
+
 }
 
-section>section>div:nth-of-type(1){
+section>section>div:nth-of-type(1) {
     border-radius: 0 0 0 20px;
-    width: 50%;
+    width: 18vw;
+
+
+
+
 }
 
-section>section>div:nth-of-type(2){
+section>section>div:nth-of-type(2) {
     border-radius: 0 0 20px 0;
-    width: 50%;
+    width: 18vw;
+
+
+
+
+}
+
+.albumSongs>section h2 {
+    font-family: "BarlowCBold";
+    font-size: 1.8vw;
+    margin-left: 25px;
+    line-height: 0;
+
+
+}
+
+
+
+
+
+/* Content Section Info */
+
+.albumInfo div {
+    background-color: rgb(190, 75, 140);
+    color: rgb(255, 208, 0);
+    font-family: "BarlowCLight";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3vw;
+
+
+
+}
+
+#info2>div {
+    background-color: rgb(252, 213, 192);
+    color: rgb(59, 118, 185);
+
+}
+
+.albumInfo {
+    display: flex;
+    height: 180px;
+    gap: 5px;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 25px;
+
+
+
+
+
+
+}
+
+.albumInfo>div:nth-of-type(1) {
+    width: 12vw;
+    border-radius: 20px 0 20px 20px;
+    padding: 0px 10px 0px 10px;
+    margin-right: 130px;
+    height: 190px;
+
+}
+
+.albumInfo>div:nth-of-type(2) {
+    width: 27vw;
+    border-radius: 20px 20px 20px 0;
+    padding: 0px 10px 0px 10px;
+    height: 190px;
+}
+
+.albumInfo>div:nth-of-type(3) {
+    width: 12vw;
+    border-radius: 0 20px 20px 20px;
+    padding: 0px 10px 0px 10px;
+    background-image: url(images/chas_chandler.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: start;
+    align-items: end;
+    color: white;
+    height: 190px;
+}
+
+.albumInfo>div:nth-of-type(4) {
+    width: 12vw;
+    border-radius: 20px 20px 0 20px;
+    padding: 0px 10px 0px 10px;
+    height: 190px;
+}
+
+
+
+#info2>div:nth-of-type(1) {
+    width: 27vw;
+    border-radius: 20px 20px 20px 0;
+    padding: 0px 10px 0px 10px;
+    height: 190px;
+    margin-right: 0;
+
+}
+
+#info2>div:nth-of-type(2) {
+    width: 12vw;
+    border-radius: 0 20px 20px 20px;
+    padding: 0px 10px 0px 10px;
+    height: 190px;
+}
+
+#info2>div:nth-of-type(3) {
+    width: 27vw;
+    border-radius: 0 20px 20px 20px;
+    padding: 0px 10px 0px 10px;
+    background-image: url(images/jimi_eddie.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: start;
+    align-items: end;
+    color: white;
+    height: 14vw;
+    height: 190px;
+}
+
+#info2>div:nth-of-type(4) {
+    width: 12vw;
+    border-radius: 20px 20px 0 20px;
+    padding: 0px 10px 0px 10px;
+    height: 190px;
+}
+
+
+
+
+
+
+
+/* Footer */
+
+main>p {
+    font-family: "BarlowCLight";
+    color: rgb(217, 217, 217);
+    font-size: 1.4vw;
+    line-height: 0;
+    margin-bottom: 0;
+    margin-top: 75px;
 }
