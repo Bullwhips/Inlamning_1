@@ -50,7 +50,7 @@ main {
 main>h1 {
     font-family: "BungeeShade";
     color: rgb(197, 194, 194);
-    font-size: 6vw;
+    font-size: 7.3vw;
     margin-top: 0;
     line-height: 1;
 }
@@ -76,7 +76,7 @@ nav>div {
     justify-content: center;
     border-radius: 10px;
     font-family: "BarlowCLight";
-    font-size: 2vw;
+    font-size: 2.5vw;
     padding: 5px;
 }
 
@@ -91,20 +91,20 @@ nav>div:nth-of-type(2) {
 
 
 nav>div:nth-of-type(1):hover {
-    background-color:rgba(28, 27, 27, 0.6);
+    background-color: rgba(28, 27, 27, 0.6);
     color: white;
     cursor: pointer;
 }
 
 nav>div:nth-of-type(3):hover {
-    background-color:rgba(28, 27, 27, 0.6);
+    background-color: rgba(28, 27, 27, 0.6);
     color: white;
     cursor: pointer;
 
 }
 
 nav>div:nth-of-type(4):hover {
-    background-color:rgba(28, 27, 27, 0.6);
+    background-color: rgba(28, 27, 27, 0.6);
     color: white;
     cursor: pointer;
 
@@ -162,13 +162,13 @@ div>section>h2 {
     line-height: 0;
     padding-top: 4px;
     padding-bottom: 60px;
-    font-size: 2vw;
+    font-size: 2.4vw;
 
 }
 
 div p {
     font-family: "BarlowCLight";
-    font-size: 1.4vw;
+    font-size: 1.7vw;
 
 }
 
@@ -181,15 +181,15 @@ div>section:nth-of-type(2) p {
 }
 
 div>section:nth-of-type(2)>p:nth-of-type(2) {
-    padding-left: 35px;
+    margin-left: 35px;
 }
 
 div>section:nth-of-type(2)>p:nth-of-type(3) {
-    padding-left: 35px;
+    margin-left: 35px;
 }
 
 div>section:nth-of-type(2)>p:nth-of-type(4) {
-    padding-left: 35px;
+    margin-left: 35px;
     padding-bottom: 60px;
 }
 
@@ -217,20 +217,20 @@ article {
 
 li {
     font-family: "BarlowCLight";
-    font-size: 1.2vw;
+    font-size: 1.4vw;
 }
 
 .albumSongs>div {
     margin-top: 15px;
     margin-right: 15px;
     position: relative;
-    
+
 }
 
 .albumSongs>div img:nth-of-type(1) {
     width: 100%;
     border-radius: 20px 20px 0 0;
-    transition: 1s ;
+    transition: 1s;
     height: 100%;
 }
 
@@ -244,18 +244,19 @@ li {
     bottom: 0;
     opacity: 0;
     height: 99%;
-    transition: 1s ;
+    transition: 1s;
 }
 
 .albumSongs>div:hover>img:nth-of-type(1) {
-   opacity: 0;
-} 
+    opacity: 0;
+}
 
 .albumSongs>div:hover>img:nth-of-type(2) {
-    opacity: 1;;
- } 
-     
-    
+    opacity: 1;
+    ;
+}
+
+
 
 
 section>section {
@@ -286,7 +287,7 @@ section>section>div:nth-of-type(2) {
 
 .albumSongs>section h2 {
     font-family: "BarlowCBold";
-    font-size: 1.8vw;
+    font-size: 2.2vw;
     margin-left: 25px;
     line-height: 0;
 
@@ -306,7 +307,7 @@ section>section>div:nth-of-type(2) {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.3vw;
+    font-size: 1.6vw;
 
 
 
@@ -425,4 +426,114 @@ main>p {
     line-height: 0;
     margin-bottom: 0;
     margin-top: 75px;
+}
+
+/* Media */
+
+@media (min-width: 800px) and (max-width: 900px) {
+    main h1 {
+        font-size: 58px;
+    }
+
+    nav>div {
+        font-size: 20px;
+    }
+
+    div>section h1 {
+        font-size: 28px;
+    }
+
+    div>section h2 {
+        font-size: 19px;
+    }
+
+    div p {
+        font-size: 13.5px;
+    }
+
+    .albumSongs>section h2 {
+        font-size: 17.5px
+    }
+
+    li {
+        font-size: 11.5px;
+    }
+
+    .albumInfo div {
+        font-size: 12.5px;
+    }
+}
+
+@media (min-width: 900px) and (max-width: 1200px) {
+    main h1 {
+        font-size: 6.4vw;
+    }
+
+    nav>div {
+        font-size: 2.2vw;
+    }
+
+    div>section h1 {
+        font-size: 3.2vw;
+    }
+
+    div>section h2 {
+        font-size: 2.1vw;
+    }
+
+    div p {
+        font-size: 1.5vw;
+    }
+
+    .albumSongs>section h2 {
+        font-size: 1.9vw;
+    }
+
+    li {
+        font-size: 1.3vw;
+    }
+
+    .albumInfo div {
+        font-size: 1.4vw;
+    }
+}
+
+@media (min-width: 1200px) {
+    main h1 {
+        font-size: 77px;
+    }
+
+    nav>div {
+        font-size: 25.5px;
+    }
+
+    div>section h1 {
+        font-size: 38.2px;
+    }
+
+    div>section h2 {
+        font-size: 25.5px;
+    }
+
+    div p {
+        font-size: 18px;
+    }
+
+    .albumSongs>section h2 {
+        font-size: 23px;
+    }
+
+    li {
+        font-size: 15.5px;
+    }
+
+    .albumInfo div {
+        font-size: 16.5px;
+    }
+
+    main {
+        width: 960px;
+        margin-left: 108px;
+        
+    }
 }

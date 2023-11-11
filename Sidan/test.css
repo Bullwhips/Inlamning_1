@@ -34,10 +34,13 @@ body {
 
 main {
     background-color: rgb(0, 0, 0, 0.4);
-    margin-left: 90px;
-    margin-right: 90px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 100px;
     margin-top: 60px;
     border-radius: 20px;
+    width: 80vw;
+    padding: 20px;
 }
 
 
@@ -46,11 +49,9 @@ main {
 
 main>h1 {
     font-family: "BungeeShade";
-    color: rgb(173, 170, 170);
-    font-size: 70px;
-    margin-left: 20px;
+    color: rgb(197, 194, 194);
+    font-size: 6vw;
     margin-top: 0;
-    padding-top: 10px;
     line-height: 1;
 }
 
@@ -69,19 +70,16 @@ nav>div {
     background-color: rgba(214, 214, 214, 0.6);
     flex-basis: 0;
     flex-grow: 1;
-    height: 50px;
+    height: 4vw;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 10px;
     font-family: "BarlowCLight";
-    font-size: 25px;
+    font-size: 2vw;
     padding: 5px;
 }
 
-nav>div:nth-of-type(1) {
-    margin-left: 20px;
-}
 
 nav>div:nth-of-type(2) {
     font-family: "BarlowCBold";
@@ -89,8 +87,27 @@ nav>div:nth-of-type(2) {
     border: 1px solid white;
 }
 
-nav>div:nth-of-type(4) {
-    margin-right: 20px;
+
+
+
+nav>div:nth-of-type(1):hover {
+    background-color:rgba(28, 27, 27, 0.6);
+    color: white;
+    cursor: pointer;
+}
+
+nav>div:nth-of-type(3):hover {
+    background-color:rgba(28, 27, 27, 0.6);
+    color: white;
+    cursor: pointer;
+
+}
+
+nav>div:nth-of-type(4):hover {
+    background-color:rgba(28, 27, 27, 0.6);
+    color: white;
+    cursor: pointer;
+
 }
 
 
@@ -103,10 +120,12 @@ main>div {
     border-top: 2px solid gray;
     border-bottom: 2px solid gray;
     background-color: rgb(0, 0, 0, 0.3);
-    margin-left: 20px;
-    margin-right: 20px;
     border-radius: 20px;
     color: rgb(217, 217, 217);
+    overflow: hidden;
+    width: 100%;
+
+
 
 }
 
@@ -114,13 +133,15 @@ main>div>div {
     display: flex;
 }
 
-.album1Songs {
+.albumSongs {
     width: 40%;
 }
 
 div>div>div {
     width: 60%;
+
 }
+
 
 
 
@@ -128,79 +149,144 @@ div>div>div {
 
 div>section h1 {
     font-family: "BungeeOutline";
+    color: rgb(255, 255, 255);
+    font-size: 3vw;
+    line-height: 0;
+    padding-top: 15px;
+
 }
 
 div>section>h2 {
     font-family: "BarlowCBold";
-    color: rgb(185, 185, 185)
+    color: rgb(185, 185, 185);
+    line-height: 0;
+    padding-top: 4px;
+    padding-bottom: 60px;
+    font-size: 2vw;
+
 }
 
 div p {
     font-family: "BarlowCLight";
+    font-size: 1.4vw;
+
 }
 
+div>div>div {
+    margin-left: 15px;
+}
+
+div>section:nth-of-type(2) p {
+    line-height: 0;
+}
+
+div>section:nth-of-type(2)>p:nth-of-type(2) {
+    margin-left: 35px;
+}
+
+div>section:nth-of-type(2)>p:nth-of-type(3) {
+    margin-left: 35px;
+}
+
+div>section:nth-of-type(2)>p:nth-of-type(4) {
+    margin-left: 35px;
+    padding-bottom: 60px;
+}
+
+article {
+    margin-right: 5px;
+
+}
 
 
 /* Content Section Album */
 
-.album1Songs>section {
+.albumSongs>section {
     display: flex;
 }
 
-.album1Songs>div {
+.albumSongs>section>div {
     background-color: rgb(255, 208, 0);
     color: rgb(189, 98, 113);
 }
 
+#songs2>div {
+    background-color: rgb(59, 118, 185);
+    color: rgb(252, 213, 192);
+}
+
 li {
     font-family: "BarlowCLight";
-    font-size: 1.3vw;
+    font-size: 1.2vw;
 }
 
-.album1Songs>div {
-    margin-top: 10px;
+.albumSongs>div {
+    margin-top: 15px;
+    margin-right: 15px;
+    position: relative;
     
-    grid-area: 1/ 1/ 2/ 3;
 }
 
-.album1Songs>div img {
+.albumSongs>div img:nth-of-type(1) {
     width: 100%;
+    border-radius: 20px 20px 0 0;
+    transition: 1s ;
     height: 100%;
-
 }
 
+.albumSongs>div img:nth-of-type(2) {
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    opacity: 0;
+    height: 99%;
+    transition: 1s ;
+}
 
+.albumSongs>div:hover>img:nth-of-type(1) {
+   opacity: 0;
+} 
 
-.album1Songs{
-    display: grid;
-    grid-template-columns: 16vw 16vw;
-    grid-template-rows: 35vw 16vw;
-    margin-right: 10px;
+.albumSongs>div:hover>img:nth-of-type(2) {
+    opacity: 1;;
+ } 
+     
     
+
+
+section>section {
+    gap: 10px;
+    margin-right: 15px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+
 }
 
-.album1Songs>div:nth-of-type(2) {
+section>section>div:nth-of-type(1) {
     border-radius: 0 0 0 20px;
-    grid-area: 2/ 1/ 2/ 1;
-    margin-right: 10px;
-    
-    
-   
+    width: 18vw;
+
+
+
 
 }
 
-.album1Songs>div:nth-of-type(3) {
+section>section>div:nth-of-type(2) {
     border-radius: 0 0 20px 0;
-    grid-area: 2/ 2/ 2/ 2;
-    
-    
-    
+    width: 18vw;
+
+
+
 
 }
 
-.album1Songs h2 {
+.albumSongs>section h2 {
     font-family: "BarlowCBold";
-    font-size: 22px;
+    font-size: 1.8vw;
     margin-left: 25px;
     line-height: 0;
 
@@ -209,17 +295,124 @@ li {
 
 
 
+
+
 /* Content Section Info */
 
-.album1Info div {
-    background-color: rgb(189, 98, 113);
+.albumInfo div {
+    background-color: rgb(190, 75, 140);
     color: rgb(255, 208, 0);
     font-family: "BarlowCLight";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3vw;
+
+
+
 }
 
-.album1Info {
-    display: flex;
+#info2>div {
+    background-color: rgb(252, 213, 192);
+    color: rgb(59, 118, 185);
+
 }
+
+.albumInfo {
+    display: flex;
+    height: 180px;
+    gap: 5px;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 25px;
+
+
+
+
+
+
+}
+
+.albumInfo>div:nth-of-type(1) {
+    width: 12vw;
+    border-radius: 20px 0 20px 20px;
+    padding: 0px 10px 0px 10px;
+    margin-right: 130px;
+    height: 190px;
+
+}
+
+.albumInfo>div:nth-of-type(2) {
+    width: 27vw;
+    border-radius: 20px 20px 20px 0;
+    padding: 0px 10px 0px 10px;
+    height: 190px;
+}
+
+.albumInfo>div:nth-of-type(3) {
+    width: 12vw;
+    border-radius: 0 20px 20px 20px;
+    padding: 0px 10px 0px 10px;
+    background-image: url(images/chas_chandler.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: start;
+    align-items: end;
+    color: white;
+    height: 190px;
+}
+
+.albumInfo>div:nth-of-type(4) {
+    width: 12vw;
+    border-radius: 20px 20px 0 20px;
+    padding: 0px 10px 0px 10px;
+    height: 190px;
+}
+
+
+
+#info2>div:nth-of-type(1) {
+    width: 27vw;
+    border-radius: 20px 20px 20px 0;
+    padding: 0px 10px 0px 10px;
+    height: 190px;
+    margin-right: 0;
+
+}
+
+#info2>div:nth-of-type(2) {
+    width: 12vw;
+    border-radius: 0 20px 20px 20px;
+    padding: 0px 10px 0px 10px;
+    height: 190px;
+}
+
+#info2>div:nth-of-type(3) {
+    width: 27vw;
+    border-radius: 0 20px 20px 20px;
+    padding: 0px 10px 0px 10px;
+    background-image: url(images/jimi_eddie.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: start;
+    align-items: end;
+    color: white;
+    height: 14vw;
+    height: 190px;
+}
+
+#info2>div:nth-of-type(4) {
+    width: 12vw;
+    border-radius: 20px 20px 0 20px;
+    padding: 0px 10px 0px 10px;
+    height: 190px;
+}
+
+
+
+
 
 
 
@@ -228,4 +421,8 @@ li {
 main>p {
     font-family: "BarlowCLight";
     color: rgb(217, 217, 217);
+    font-size: 1.4vw;
+    line-height: 0;
+    margin-bottom: 0;
+    margin-top: 75px;
 }
