@@ -51,9 +51,7 @@ main>h1 {
     line-height: 1;
 }
 
-br {
-    display: none;
-}
+
 
 /* Nav */
 
@@ -114,6 +112,10 @@ main>div {
     color: rgb(217, 217, 217);
     overflow: hidden;
     width: 100%;
+}
+
+main>div:nth-of-type(2) {
+    margin-top: 20px;
 }
 
 main>div>div {
@@ -471,6 +473,6 @@ main>p {
 
     main {
         width: 960px;
-        
+
     }
 }
