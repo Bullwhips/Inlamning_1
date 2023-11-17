@@ -366,6 +366,7 @@ main>p {
     line-height: 0;
     margin-bottom: 0;
     margin-top: 75px;
+
 }
 
 /* Media */
@@ -403,7 +404,7 @@ main>p {
         font-size: 12.5px;
     }
 
-    main>p{
+    main>p {
         font-size: 12.5px;
     }
 }
@@ -441,7 +442,7 @@ main>p {
         font-size: 1.4vw;
     }
 
-    main>p{
+    main>p {
         font-size: 1.4vw;
     }
 }
@@ -485,7 +486,7 @@ main>p {
 
     }
 
-    main>p{
+    main>p {
         font-size: 17px;
     }
 }
